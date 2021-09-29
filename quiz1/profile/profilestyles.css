@@ -1,0 +1,372 @@
+/* Import Font From Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&family=Roboto:wght@400;500&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #161616;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+#main{
+    width:100%;
+    height:100vh;
+    box-sizing: border-box;
+    background-color: #edf1fd;    ;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: "Raleway", sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 50px;
+    background-color: #f4f7ff;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li a{
+    padding: 10px 15px;
+    color: #6c707c;
+    font-size: 12px;
+}
+
+.lang{
+    color:#292929;
+
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: 700;
+    color: #292929;
+    font-family: "Raleway", sans-serif;
+}
+
+.menu li a:hover, .active{
+    background-color: #292929;
+    color:#ffffff !important ;
+    font-weight: 700;
+    transition: all ease 0.4s;
+}
+
+/* Home Styling */
+.home{
+    display: flex;
+    background: url("../img/profilebg.png") no-repeat center;
+    height: 100vh;
+    color: white;
+    min-height: 500px;
+    font-family: "Raleway", sans-serif;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1{
+    text-align: left;
+    font-size: 27px;
+    margin-left: 30px;
+}
+
+.home .home-content .text-2{
+    text-align: left;
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: 30px;
+    
+}
+
+.home .home-content .text-3{
+    text-align: left;
+    font-size: 30px;
+    margin: 8px 0;
+    margin-left: 40px;
+}
+
+.home .home-content .text-3 span{
+    text-align: center;
+    color: #ff3217;
+    font-weight: 700;
+}
+
+#profile{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 5% 0px 5%;
+}
+
+.profile-text{
+    font-family: "raleway", sans-serif;
+    width: 50%;
+}
+
+.profile-text h1{
+    font-size: 5rem;
+    color: #ff3217;
+}
+
+.profile-text h2{
+    font-size: 3rem;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.profile-text h1,h2{
+    margin: 0px;
+    padding: 0px;
+}
+
+.profile-text{
+    font-size: 1.2rem;
+    color: rgba(251, 251, 251, 0.90)
+}
+
+#skill{
+    width: 100%;
+    height: 100vh;
+    font-family: "raleway", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+.s-heading h1{
+    color: #ffffff;
+    font-size: 3rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+.s-heading p{
+    color: rgba(249, 249, 249, 0.30);
+    font-size: 1rem;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.s-heading{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.s-box{
+    background-color: #2b2b2b;
+    width: 350px;
+    height: 500px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 12px rgba(0, 0,0, 0.1);
+}
+
+.s-b-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-b-img{
+    width: 100%;
+    height: 70%;
+}
+
+.s-b-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.s-b-text{
+    width: 100%;
+    height: 30%;
+    background-color: #1e1e1e;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-b-text a{
+    margin: 0px;
+    color:#ffffff;
+    font-size: 1.1rem;
+    font-family: "raleway", sans-serif;
+    display: block;
+    display: -webkit-box;
+    max-width: 80%;
+    -webkit-flow-into: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+
+.s-type{
+    font-family: "raleway", sans-serif;
+    color: #ffffff;
+    background-color: #151515;
+    padding: 10px 15px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+
+}
+
+.s-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+
+.s-b-text a:hover{
+    color: rgba(255, 255, 255, 0.50);
+}
+
+#portfolio{
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Raleway";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 2% 20px 2%;
+}
+
+.p-heading{
+    font-family: "Raleway";
+    font-size: 1.rem;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 10px 20px;
+    background-color: #292929;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
+}
+
+.p-desc{
+    color: rgba(249, 249, 249, 0.30);
+    font-size: 1rem;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.p01{
+    font-family: "Raleway";
+    font-size: 1.rem;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 10px 20px;
+    background-color: #292929;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
+}
+
+.p02{
+    font-family: "Raleway";
+    font-size: 1.rem;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 10px 20px;
+    background-color: #292929;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
+}
+
+@media(max-width:1190px){
+    #main{
+        background-size: 1150px;
+    }
+
+    .name{
+        left: 10%;
+        top: 50%;
+        transform: translate(-10%), -50%;
+    }
+
+    .profil-model img{
+        height: 400px;
+
+    }
+    
+    #skill{
+        height: auto;
+    }
+
+    .s-b-container{
+        flex-wrap: wrap;
+    }
+}
+
+.home .home-content .text-4{
+    text-align: left;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 8px 0;
+    margin-left: 40px;
+}
+
+.home .home-content .text-5{
+    text-align: left;
+    font-size: 24px;
+    margin: 8px 900px;
+    margin-left: 30px;
+}
+
+.home .home-content p{
+	margin:0;
+	overflow: hidden;
+}
+
+.home .home-content p span{
+    text-align: left;
+    font-size: 35px;
+    color: #ff3217;
+    margin-left: 30px;
+}
+
+
+
+
+.scrollToTopBtn {
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	z-index: 100;
+	display: none;
+	padding: 8px 4px;
+	cursor: pointer;
+  }

@@ -1,0 +1,161 @@
+/* Import Font From Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&family=Roboto:wght@400;500&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #161616;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+#main{
+    width:100%;
+    height:100vh;
+    box-sizing: border-box;
+    background-color: #edf1fd;    ;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: "Raleway", sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 50px;
+    background-color: #f4f7ff;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li a{
+    padding: 10px 15px;
+    color: #6c707c;
+    font-size: 12px;
+}
+
+.lang{
+    color:#292929;
+
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: 700;
+    color: #292929;
+    font-family: "Raleway", sans-serif;
+}
+
+.menu li a:hover, .active{
+    background-color: #292929;
+    color:#ffffff !important ;
+    font-weight: 700;
+    transition: all ease 0.4s;
+}
+
+/* Home Styling */
+.home{
+    display: flex;
+    background: url("img/blackbg.png") no-repeat center;
+    height: 100vh;
+    color: white;
+    min-height: 500px;
+    font-family: "Raleway", sans-serif;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1{
+    text-align: left;
+    font-size: 27px;
+    margin-left: 30px;
+}
+
+.home .home-content .text-2{
+    text-align: left;
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: 27px;
+    
+}
+
+.home .home-content .text-3{
+    text-align: left;
+    font-size: 30px;
+    margin: 8px 0;
+    margin-left: 30px;
+}
+
+
+
+.home .home-content .text-4{
+    text-align: left;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 8px 0;
+    margin-left: 30px;
+}
+
+.home .home-content .text-5{
+    text-align: left;
+    font-size: 24px;
+    margin: 8px 900px;
+    margin-left: 30px;
+}
+
+.home .home-content p{
+	margin:0;
+	overflow: hidden;
+}
+
+.home .home-content p span{
+    text-align: left;
+    font-size: 35px;
+    color: #ff3217;
+    margin-left: 30px;
+}
+
+
+
+
+
+.home .home-content p span.text-in{
+	display: block;
+	animation: textIn .5s ease;
+}
+.home .home-content p span.text-out{
+	animation: textOut .5s ease;
+}
+@keyframes textIn{
+	0%{
+		transform: translateY(100%);
+	}
+	100%{
+		transform: translateY(0%);
+	}
+}
+@keyframes textOut{
+	0%{
+		transform: translateY(0%);
+	}
+	100%{
+		transform: translateY(-100%);
+
+	}
+}
